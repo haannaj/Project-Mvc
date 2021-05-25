@@ -9,5 +9,5 @@ before_script:
     - make install
 
 script:
-    # - make test
-    - vendor/bin/codecept run
+    - make test
+    # - vendor/bin/codecept run

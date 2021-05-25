@@ -71,19 +71,19 @@ class Game21 extends Model
             endif; 
 
             if ($CP == $PP || $CP < $PP) :
-                return "Computer Won!";
+                return "Computer Won";
             endif;
-            return "Player won!";
+            return "You Won";
         endif;
         return "";
     }
 
     public function pointsRound($winner, $PP, $CP): array
     {
-        if ($winner == "Player won!") :
+        if ($winner == "You Won") :
             $PP = $PP + 1;
             return [$PP, $CP];
-        elseif ($winner == "Computer Won!") : 
+        elseif ($winner == "Computer Won") : 
             $CP = $CP + 1;
             return [$PP, $CP];
         endif;
@@ -92,14 +92,14 @@ class Game21 extends Model
 
     public function highscore($points, $CP, $PP): void
     {
-        if ($points == "Player won!") 
+        if ($points == "You Won") 
             Yii::$app->db->createCommand()->insert('highscore', [
                 'name' => 'Player',
                 'score' => $PP,
                 'game' => 'Game 21',
                 'closest' => abs($PP - 21)
             ])->execute();
-        elseif ($points == "Computer Won!")
+        elseif ($points == "Computer Won")
             Yii::$app->db->createCommand()->insert('highscore', [
                 'name' => 'Computer',
                 'score' => $CP,

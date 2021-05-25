@@ -11,12 +11,13 @@ class GameForm extends Model
     public $stop;
     public $summa;
     public $CP;
+    public $bet;
     public $PP;
 
     public function rules()
     {
         return [
-            [['dice', 'summa', 'stop', 'PP', 'CP'], 'required'],
+            [['dice', 'summa', 'stop', 'PP', 'CP', 'bet'], 'required'],
         ];
     }
 

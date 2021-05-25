@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <table id="books">
   <tr>
     <?php foreach ($countries as $country): ?>
-      <td><b><?= $country->title ?></b></td>
+      <td ><b><?= $country->title ?></b></td>
     <?php endforeach; ?>
   </tr>
   <tr>

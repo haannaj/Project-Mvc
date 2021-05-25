@@ -158,13 +158,12 @@ class SiteController extends Controller
     {
         $model = new GameForm();
         $dice = new Game21();
-        $computer = new Game21();
         
         if ($model->load(Yii::$app->request->post())) {
             $dices = $dice->getDices($model->dice);
             $sum = $dice->sumDices($dices);
             $totalSum = $dice->totSum($sum, $model->summa, $model->stop);
-            $computerPoint = $computer->rollComputer($model->dice);
+            $computerPoint = $dice->rollComputer($model->dice);
             $gameOverMessage = $dice->getGameOver21Message($totalSum, $model->stop);
             $points = $dice->pointsGame($gameOverMessage, $computerPoint, $totalSum);
             $countPoints = $dice->pointsRound($points, $model->PP, $model->CP);
