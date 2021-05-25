@@ -92,20 +92,27 @@ class Game21 extends Model
 
     public function highscore($points, $CP, $PP): void
     {
-        if ($points == "You Won") 
+        if ($points == "You Won") {
             Yii::$app->db->createCommand()->insert('highscore', [
                 'name' => 'Player',
                 'score' => $PP,
                 'game' => 'Game 21',
                 'closest' => abs($PP - 21)
             ])->execute();
-        elseif ($points == "Computer Won")
+            Yii::$app->db->createCommand()->insert('histogram', [
+                'score' => $PP,
+            ])->execute();
+        } elseif ($points == "Computer Won") {
             Yii::$app->db->createCommand()->insert('highscore', [
                 'name' => 'Computer',
                 'score' => $CP,
                 'game' => 'Game 21',
                 'closest' => abs($CP - 21)
             ])->execute();
+            Yii::$app->db->createCommand()->insert('histogram', [
+                'score' => $CP,
+            ])->execute();
+        }
     }
 }
 

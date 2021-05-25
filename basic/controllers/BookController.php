@@ -10,11 +10,11 @@ class BookController extends Controller
     public function actionIndex()
     {
         $query = Book::find();
-        $countries = $query->orderBy('title')
+        $books = $query->orderBy('title')
             ->all();
 
         return $this->render('index', [
-            'countries' => $countries
+            'countries' => $books
         ]);
     }
 }

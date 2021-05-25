@@ -17,9 +17,9 @@ $this->params['breadcrumbs'][] = $this->title;
     </tr>
     <?php foreach ($highscores as $HS): ?>
         <tr>
-            <td><b><?= $HS->name ?></b></td>
-            <td><?= $HS->score ?></td>
-            <td><?= $HS->game ?></td>
+            <td><b><?= $HS['name'] ?></b></td>
+            <td><?= $HS['score'] ?></td>
+            <td><?= $HS['game'] ?></td>
         </tr>
     <?php endforeach; ?>
 </table>

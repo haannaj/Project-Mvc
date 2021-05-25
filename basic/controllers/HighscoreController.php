@@ -10,8 +10,8 @@ class HighscoreController extends Controller
     public function actionIndex()
     {
         $query = Highscore::find();
-        $highscores = $query->orderBy('closest')
-            ->all();
+        $highscores = Yii::$app->db->createCommand('SELECT * FROM highscore ORDER BY closest LIMIT 15')
+        ->queryAll();
 
         return $this->render('index', [
             'highscores' => $highscores

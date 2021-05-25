@@ -6,7 +6,7 @@ use yii\widgets\LinkPager;
 $this->title = 'Books';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<h1><?= Html::encode($this->title) ?></h1><br>
+<h1><?= Html::encode($this->title) ?></h1>
 <table id="books">
   <tr>
     <?php foreach ($countries as $country): ?>

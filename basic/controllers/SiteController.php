@@ -11,6 +11,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\GameForm;
 use app\models\YatzyForm;
+use app\models\Histogram;
 use app\models\Game21;
 
 class SiteController extends Controller
@@ -159,6 +160,11 @@ class SiteController extends Controller
         $model = new GameForm();
         $dice = new Game21();
         
+        $query = Histogram::find();
+        $histogram = Yii::$app->db->createCommand('SELECT Score, COUNT(*) FROM Histogram GROUP BY Score LIMIT 10')
+        ->queryAll();
+
+
         if ($model->load(Yii::$app->request->post())) {
             $dices = $dice->getDices($model->dice);
             $sum = $dice->sumDices($dices);
@@ -167,8 +173,8 @@ class SiteController extends Controller
             $gameOverMessage = $dice->getGameOver21Message($totalSum, $model->stop);
             $points = $dice->pointsGame($gameOverMessage, $computerPoint, $totalSum);
             $countPoints = $dice->pointsRound($points, $model->PP, $model->CP);
-            
             $dice->highscore($points, $computerPoint, $totalSum);
+
 
             return $this->render('game', ['model' => $model, 
             'message' => $dices,
@@ -181,7 +187,10 @@ class SiteController extends Controller
             'playerPoint' => $countPoints[0]]);
         } else {
             // either the page is initially displayed or there is some validation error
-            return $this->render('game', ['model' => $model]);
+            return $this->render('game', [
+                'model' => $model,
+                'histogram' => $histogram
+            ]);
         }
     }   
     

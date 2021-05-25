@@ -6,13 +6,13 @@ $this->title = 'Game 21';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-
 <div class="site-game21">
 
     <?php if ($model->dice == null ) : ?>
         <h1><?= Html::encode($this->title) ?></h1>
+        <br>
         <?php $form = ActiveForm::begin(); ?>
-            <?= $form->field($model, 'dice')->label("Enter how many dices you want to play with") ?>
+            <?= $form->field($model, 'dice')->label("Enter how many dices you want to play with, 1 or 2") ?>
             <?= $form->field($model, 'PP')->hiddenInput(['value'=> 0])->label(false); ?>
             <?= $form->field($model, 'CP')->hiddenInput(['value'=> 0])->label(false); ?>
 
@@ -21,6 +21,16 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
         <?php ActiveForm::end(); ?>
+        <p class="histogram">Histogram of scores</p>
+        <table id="histogram">
+            <?php foreach ($histogram as $hist): ?>
+                <tr>
+                    <td><b><?= $hist['score']?></b></td>
+                    <td><?= str_repeat('* ',$hist['COUNT(*)']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+
 
     <?php else :?>
         <div class="game">
