@@ -2,12 +2,10 @@ language: php
 
 php:
     - "7.4"
-    #- "8.0"
+    - "8.0"
 
 before_script:
-    #- make install check
-    - make install
+    - php vendor/bin/codecept build
 
 script:
-    - vendor/bin/codecept run
-    # - make test
+    - php vendor/bin/codecept run

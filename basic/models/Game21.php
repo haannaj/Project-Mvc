@@ -39,7 +39,6 @@ class Game21 extends Model
         else :
             return intval($totsum) + intval($sum);
         endif;
-
     }
 
     public function getGameOver21Message(int $totSum, $stop): string

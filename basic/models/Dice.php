@@ -10,7 +10,6 @@ use yii\base\Model;
  */
 class Dice extends Model
 {
-    // const FACES = 6;
     private ?int $roll = null;
     private string $rolls = "";
 

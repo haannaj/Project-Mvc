@@ -23,5 +23,3 @@ class GameForm extends Model
 
 }
 
-
-

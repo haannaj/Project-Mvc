@@ -80,7 +80,7 @@ h1 {
 
 .navbar-inverse{
     background-color: #020a24;
-    border-bottom: 0.2px solid #ccc;
+    border-bottom: 0.2px solid #64374e;
 }
 
 
@@ -112,7 +112,7 @@ h1 {
 .footer {
     height: 60px;
     background-color: #020a24;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #64374e;
     padding-top: 20px;
     color: #FDE2B0;
 }
