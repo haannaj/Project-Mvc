@@ -5,7 +5,9 @@
 </p>
 
 
-<img src="https://scrutinizer-ci.com/g/haannaj/Project-Mvc/badges/quality-score.png?b=main" />
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/haannaj/Project-Mvc/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/haannaj/Project-Mvc/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/haannaj/Project-Mvc/badges/build.png?b=main)](https://scrutinizer-ci.com/g/haannaj/Project-Mvc/build-status/main)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/haannaj/Project-Mvc/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 
 This project is a platform for games and games related goodness. Game 21 is the game that’s been included so far, but there’s room for more. You can also find books, high score and histogram from result.
 
