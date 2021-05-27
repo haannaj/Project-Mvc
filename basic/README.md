@@ -14,14 +14,18 @@ Change the current working directory to the location where you want the cloned d
 
 To clone the repository using HTTPS:
       $ git clone https://github.com/haannaj/Project-Mvc.git
+      web/                contains the entry script and Web resources
 
 
 To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
       $ git@github.com:haannaj/Project-Mvc.git
+      web/                contains the entry script and Web resources
 
 
 To clone a repository using GitHub CLI:
       $ gh repo clone haannaj/Project-Mvc
+      vendor/             contains dependent 3rd-party packages
+      views/              contains view files for the Web application
 
 
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
