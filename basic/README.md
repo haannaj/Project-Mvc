@@ -11,15 +11,15 @@ Install by cloning repository by command line
 
 Open Terminal and change the current working directory to the location where you want the cloned directory.
 
-# To clone the repository using HTTPS:
+### To clone the repository using HTTPS:
 
     $ git clone https://github.com/haannaj/Project-Mvc.git
 
-# To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
+### To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
 
     $ git@github.com:haannaj/Project-Mvc.git
 
-# To clone a repository using GitHub CLI:
+### To clone a repository using GitHub CLI:
 
     $ gh repo clone haannaj/Project-Mvc
 
