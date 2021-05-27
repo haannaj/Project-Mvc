@@ -8,9 +8,6 @@ This project is a platform for games and games related goodness. Game 21 is the 
 
 The project includes a database by SQLite to store high scores, books and result to merge the histogram. 
 
-<p align="center">
-    <img src="web/img/game21.png" width="50%" />
-</p>
 
 
 GETTING STARTED
@@ -42,6 +39,10 @@ Tests can be executed by running:
     $ vendor/bin/codecept run
 
 
+<p align="center">
+    <br>
+    <img src="web/img/game21.png" width="70%" />
+</p>
 
 
 
