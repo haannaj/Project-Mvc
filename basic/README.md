@@ -9,23 +9,20 @@ INFO ABOUT projektet
 Install by cloning repository by command line
 -------------------
 
-Open Terminal.
-Change the current working directory to the location where you want the cloned directory.
+Open Terminal and change the current working directory to the location where you want the cloned directory.
 
-To clone the repository using HTTPS:
-      $ git clone https://github.com/haannaj/Project-Mvc.git
-      web/                contains the entry script and Web resources
+# To clone the repository using HTTPS:
 
+    $ git clone https://github.com/haannaj/Project-Mvc.git
 
-To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
-      $ git@github.com:haannaj/Project-Mvc.git
-      web/                contains the entry script and Web resources
+# To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
 
+    $ git@github.com:haannaj/Project-Mvc.git
 
-To clone a repository using GitHub CLI:
-      $ gh repo clone haannaj/Project-Mvc
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
+# To clone a repository using GitHub CLI:
+
+    $ gh repo clone haannaj/Project-Mvc
+
 
 
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
