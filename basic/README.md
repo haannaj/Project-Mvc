@@ -4,10 +4,12 @@
 </p>
 
 
-This project is a platform for games and games related goodness. Game 21 is the game that’s been included so far, but there’s room for more. You can also find books, high score and histogram from result. The project includes a database by SQLite to store high scores, books and result to merge the histogram. 
+This project is a platform for games and games related goodness. Game 21 is the game that’s been included so far, but there’s room for more. You can also find books, high score and histogram from result.
+
+The project includes a database by SQLite to store high scores, books and result to merge the histogram. 
 
 <p align="center">
-    <img src="web/img/game21.png" width="100%" />
+    <img src="web/img/game21.png" width="50%" />
 </p>
 
 
