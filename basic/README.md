@@ -1,6 +1,7 @@
 <p align="center">
     <img src="web/img/TGI.png" height="100px" />
     <br>
+    <br>
 </p>
 
 
@@ -29,6 +30,7 @@ Open Terminal and change the current working directory to the location where you
 #### To clone a repository using GitHub CLI:
 
     $ gh repo clone haannaj/Project-Mvc
+
 
 
 TESTING
