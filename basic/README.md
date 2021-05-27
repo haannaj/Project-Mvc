@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="<?php echo Yii::app()->request->baseUrl.'/web/img/TGI.png'?>" height="100px" />
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <img src="web/img/TGI.png" height="100px" />
+    <h1 align="center">The Game Imperium | Readme</h1>
     <br>
 </p>
 
