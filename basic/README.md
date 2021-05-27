@@ -1,6 +1,5 @@
 <p align="center">
-    <img src="<?php echo Html::img('@web/img/TGI.png') ?>" height="100px">
-
+    <img src="<?php echo Yii::app()->request->baseUrl.'/web/img/TGI.png'?>" height="100px" />
     <h1 align="center">Yii 2 Basic Project Template</h1>
     <br>
 </p>
