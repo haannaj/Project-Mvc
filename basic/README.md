@@ -4,9 +4,9 @@
 </p>
 
 
-INFO ABOUT projektet
+This project is a platform for games and games related goodness. Game 21 is the game that’s been included so far, but there’s room for more. You can also find books, high score and histogram from result. The project includes a database by SQLite to store high scores, books and result to merge the histogram. 
 
-INSTALL BY COMMAND LINE
+GETTING STARTED
 -------------------
 
 Open Terminal and change the current working directory to the location where you want the cloned directory.
