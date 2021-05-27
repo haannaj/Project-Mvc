@@ -24,16 +24,6 @@ To clone a repository using GitHub CLI:
       $ gh repo clone haannaj/Project-Mvc
 
 
-
-Open Terminal.
-
-Change the current working directory to the location where you want the cloned directory.
-
-Type git clone, and then paste the URL you copied earlier.
-
-      $ git clone https://github.com/haannaj/Project-Mvc.git
-
-
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 rapidly creating small projects.
 
