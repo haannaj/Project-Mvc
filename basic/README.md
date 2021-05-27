@@ -1,7 +1,6 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="web/img/TGI.png" height="100px">
-    </a>
+    <img src="<?php echo Html::img('@web/img/TGI.png') ?>" height="100px">
+
     <h1 align="center">Yii 2 Basic Project Template</h1>
     <br>
 </p>
