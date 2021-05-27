@@ -6,7 +6,7 @@
 
 INFO ABOUT projektet
 
-Install by cloning repository by command line
+INSTALL BY COMMAND LINE
 -------------------
 
 Open Terminal and change the current working directory to the location where you want the cloned directory.
@@ -23,6 +23,30 @@ Open Terminal and change the current working directory to the location where you
 
     $ gh repo clone haannaj/Project-Mvc
 
+
+TESTING
+-------------------
+
+Tests can be executed by running:
+
+    $ vendor/bin/codecept run
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
+
+
+
+fasda
+-------
 
 
 Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
@@ -249,4 +273,4 @@ vendor/bin/codecept run unit --coverage --coverage-html --coverage-xml
 vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xml
 ```
 
-You can see code coverage output under the `tests/_output` directory.
+You can see code coverage output under the `tests/_output` directory. -->
